@@ -1,6 +1,6 @@
 // firstly create the container that hold the whole ant in the canvas
 let canvas = document.createElement("canvas");
-canvas.id = "canvasContainer";
+canvas.id = "canvas_container";
 document.body.appendChild(canvas);
 
 function langtonant(antx, optx) {
@@ -46,7 +46,7 @@ function langtonant(antx, optx) {
   ];
 
   //  canvas for 2d can be initiated  and determine the dimension for each
-  let mainCavas = document.getElementById("canvasContainer");
+  let mainCavas = document.getElementById("canvas_container");
   let cont = mainCavas.getContext("2d");
   mainCavas.width = opts.gridsize * opts.pixlsize;
   mainCavas.height = opts.gridsize * opts.pixlsize;
